@@ -6,9 +6,12 @@
     list-style: none;
 }
 
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Colores */
 :root{
-    --rojo: #ff0000;
+    --rojo: #ff3030;
     --blanco: #f3f3f3;
     --negro: #000;
     --gris: #2b2b2b;
@@ -16,9 +19,10 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    color: var(--blanco);
     margin: 0;
     padding: 0;
-    height: 145vh;
+    height: 100vh;
     position: relative;
     background-image: linear-gradient(
         rgba(0,0,0,0.5),
@@ -39,6 +43,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
+}
+
+span{
+    color: var(--rojo);
 }
 
 .menu{
@@ -63,6 +71,7 @@ header{
 
 .items:hover{
     color: var(--rojo);
+    transition: color ease 0.7s;
 }
 
 #menu{
@@ -82,7 +91,7 @@ label{
     padding: 10px 24px;
     border-radius: 30px;
     background-color: var(--rojo);
-    color: var(--blanco);
+    color: var(--rojo);
     font-weight: 400;
     cursor: pointer;
 }
@@ -90,8 +99,35 @@ label{
 .btn:hover{
     background: var(--blanco);
     color: var(--rojo);
-    transition: color ease
-    0.9s;
+    transition: color ease 0.9s;
+}
+
+/* Sección principal */
+
+.main{
+    margin-top: 0 auto;
+    padding: 0 10%;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 10%;
+}
+
+.main img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+.button-cv{
+    padding: 10px;
+    margin: 5% 0;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--rojo);
 }
 
 /* Media queries */
