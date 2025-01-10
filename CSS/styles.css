@@ -12,6 +12,7 @@
 /* Colores */
 :root{
     --rojo: #ff3030;
+    --azul: #2d57ff;
     --blanco: #f3f3f3;
     --negro: #000;
     --gris: #2b2b2b;
@@ -27,11 +28,13 @@ body{
     background-image: linear-gradient(
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)),
-        url(../IMG/hero.jpg);
+        url(../IMG/python_hero.webp);
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
 }
+
+/* Sección menú */
 
 header{
     position: fixed;
@@ -45,8 +48,12 @@ header{
     padding: 0 5%;
 }
 
+header p, span{
+    cursor: default;
+}
+
 span{
-    color: var(--rojo);
+    color: var(--azul);
 }
 
 .menu{
@@ -70,7 +77,7 @@ span{
 }
 
 .items:hover{
-    color: var(--rojo);
+    color: var(--azul);
     transition: color ease 0.7s;
 }
 
@@ -87,20 +94,22 @@ label{
     display: none;
 }
 
-.btn{
+.btn {
     padding: 10px 24px;
     border-radius: 30px;
-    background-color: var(--rojo);
-    color: var(--rojo);
+    background-color: var(--azul);
+    color: var(--blanco); /* Asegúrate de que el color del texto sea visible en el fondo rojo */
     font-weight: 400;
     cursor: pointer;
+    transition: background-color 0.7s ease, color 0.7s ease; /* Añade la transición para el fondo y el color del texto */
 }
 
-.btn:hover{
-    background: var(--blanco);
-    color: var(--rojo);
-    transition: color ease 0.9s;
+.btn:hover {
+    background-color: var(--blanco);
+    color: var(--azul);
 }
+
+/* Fin sección menú */
 
 /* Sección principal */
 
@@ -119,6 +128,7 @@ label{
 .main img{
     width: 80%;
     border-radius: 50%;
+    border: 0.1em solid var(--azul);
 }
 
 .button-cv{
@@ -127,8 +137,65 @@ label{
     cursor: pointer;
     border-radius: 30px;
     border: none;
-    background-color: var(--rojo);
+    background-color: var(--azul);
+    font-weight: 400;
+    -webkit-box-shadow: -1px 21px 37px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 21px 37px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 21px 37px -1px rgba(0,0,0,0.75);
 }
+
+.button-cv:hover{
+    background-color: var(--blanco);
+    transition: background-color ease 0.7s;
+}
+
+/* Fin sección principal */
+
+/* Sección about */
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%; /* Cambiado de 100vw a 100% */
+    align-items: center;
+    overflow-x: hidden; /* Asegura que no haya desbordamiento horizontal */
+}
+
+.about img {
+    grid-column: 1/2;
+    grid-row: 1/1;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.about-info {
+    grid-column: 2/2;
+    padding: 3em;
+}
+
+.about-info h2 {
+    font-size: 2em;
+    color: var(--azul);
+}
+
+.divider {
+    position: relative;
+    width: 100%; /* Asegura que el contenedor no cause desbordamiento */
+    height: 1em; /* Ajusta la altura según sea necesario */
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    width: 50%; /* La mitad del ancho del contenedor */
+    border-top: 0.1em solid var(--azul); /* Define el borde */
+    transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+}
+
+/* Fin sección about */
 
 /* Media queries */
 
