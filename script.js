@@ -1,11 +1,11 @@
-var header = document.getElementById('header');
+// var header = document.getElementById('header');
 
-window.addEventListener('scroll', () => {
-    var scroll = window.scrollY;
+// window.addEventListener('scroll', () => {
+//     var scroll = window.scrollY;
 
-    if (scroll > 50){
-        header.style.backgroundColor = '#121212';
-    } else {
-        header.style.backgroundColor = 'transparent';
-    }
-});
+//     if (scroll > 50){
+//         header.style.backgroundColor = '#121212';
+//     } else {
+//         header.style.backgroundColor = 'transparent';
+//     }
+// });
