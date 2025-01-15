@@ -51,6 +51,10 @@ header{
     z-index: 2;
 }
 
+header p{
+    color: var(--blanco);
+}
+
 header p, span{
     cursor: default;
 }
