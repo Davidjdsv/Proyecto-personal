@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="CSS/styles.css">
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -19,7 +21,6 @@
     <header id="header">
         <p>J<span>D</span></p>
 
-        <input type="checkbox" id="menu">
         <label for="menu">
             <img src="IMG/menu.png" id="menu-icon" alt="menu-icon">
         </label>
@@ -38,7 +39,8 @@
         <main class="main">
             <div class="info-content">
                 <h1>Hi! I'm <span>Jhoan David Sinisterra</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis asperiores maiores impedit
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis asperiores maiores
+                    impedit
                     illum quia iste adipisci necessitatibus, beatae animi ipsum. Porro debitis quia nostrum assumenda
                     voluptatum maiores iusto inventore?
                 </p>
@@ -52,11 +54,13 @@
         <!-- Sección sobre mi -->
         <section class="grid-container">
             <div class="about">
-            <img src="/IMG/about_me_ia.jfif" alt="About picture">
+                <img src="/IMG/about_me_ia.jfif" alt="About picture">
                 <div class="about-info">
                     <h2>About me</h2>
                     <div class="divider"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis, rem dolor, aliquid doloremque explicabo necessitatibus repellendus ab unde, dolore eveniet laboriosam! Adipisci quisquam nesciunt iste nam officia voluptatum numquam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis, rem dolor, aliquid
+                        doloremque explicabo necessitatibus repellendus ab unde, dolore eveniet laboriosam! Adipisci
+                        quisquam nesciunt iste nam officia voluptatum numquam.</p>
                     <button class="button-cv">Read more</button>
                 </div>
             </div>
@@ -70,7 +74,8 @@
                 <div class="card__portfolio">
                     <div class="content_card_1 card_bg">
                         <h2>Project 1</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cum assumenda beatae, omnis sequi pariatur hic.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cum assumenda beatae, omnis
+                            sequi pariatur hic.</p>
                     </div>
                     <div class="card__footer">
                         <button>Click aquí!</button>
@@ -81,7 +86,8 @@
                 <div class="card__portfolio">
                     <div class="content_card_2 card_bg">
                         <h2>Project 2</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cum assumenda beatae, omnis sequi pariatur hic.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cum assumenda beatae, omnis
+                            sequi pariatur hic.</p>
                     </div>
                     <div class="card__footer">
                         <button>Click aquí!</button>
@@ -92,13 +98,48 @@
                 <div class="card__portfolio">
                     <div class="content_card_3 card_bg">
                         <h2>Project 3</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cum assumenda beatae, omnis sequi pariatur hic.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cum assumenda beatae, omnis
+                            sequi pariatur hic.</p>
                     </div>
                     <div class="card__footer">
                         <button>Click aquí!</button>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Sección de contacto y redes sociales -->
+        <section id="contact_section">
+
+            <div class="contact_headings">
+                <h2>Keep in touch!</h2>
+                <div class="divider"></div>
+            </div>
+
+                <div class="contact-form">
+                    <fieldset>
+                        <legend>Send me an email</legend>
+                        <form action="enviar_correo.py" class="form-group" method="post">
+                            <div class="camp-form">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="camp-form">
+                                <label for="cell">Cell number:</label>
+                                <input type="tel" id="cell" name="cell" placeholder="Cell phone number" required>
+                            </div>
+                            <div class="camp-form">
+                                <label for="email">E-mail:</label>
+                                <input type="text" id="email" name="email" placeholder="E-mail" required>
+                            </div>
+                            <div class="camp-form">
+                                <label for="message">Mensaje:</label>
+                                <textarea name="message" id="message" placeholder="Text your message here!"></textarea>
+                                <button type="submit" class="button-cv btn-contact">Send message!</button>
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
         </section>
     </main>
 

@@ -121,7 +121,7 @@ label{
 /* Sección principal */
 
 .main-container{
-    width: 85%;
+    width: 90%;
     background-color: var(--gris-suave);
     margin: 60px auto;
     display: flex;
@@ -240,9 +240,16 @@ label{
 
 #section_portfolio{
     width: 100%;
-    height: 100vh;
     background-color: var(--gris-suave);
     margin: 1em auto;
+}
+
+.title__portfolio{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1em auto;
+    padding: 1em 1em;
+    font-size: 600;
 }
 
 .container-cards__portfolio{
@@ -257,6 +264,30 @@ label{
 .card_bg{
     color: var(--blanco);
     width: 100%;
+}
+
+.card__footer{
+    display: flex;
+    justify-content: center;
+}
+
+.card__footer button{
+    /* Visual */
+    margin: .3em;
+    padding: .3em;
+    border-radius: 30px;
+    border: none;
+    background: var(--rojo);
+    cursor: pointer;
+    /* shadow box */
+    -webkit-box-shadow: 5px 7px 16px 3px rgba(0,0,0,0.44);
+    -moz-box-shadow: 5px 7px 16px 3px rgba(0,0,0,0.44);
+    box-shadow: 5px 7px 16px 3px rgba(0,0,0,0.44);
+}
+
+.card__footer button:hover{
+    background-color: transparent;
+    transition: ease .7s;
 }
 
 .card__portfolio {
@@ -303,6 +334,46 @@ label{
 
 
 /* Fin sección portafolio */
+
+/* Inicio sección formulario */
+
+#contact_section{
+    width: 100%;
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_headings{
+    padding: 1em 0;
+}
+
+.contact-form{
+    /* Visual */
+    width: 50%;
+}
+
+.camp-form{
+    padding: 1em;
+}
+
+.camp-form input, textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 2px var(--rojo) solid;
+    background-color: transparent;
+}
+
+.btn-contact{
+    width: 100%;
+    padding: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto;
+}
 
 /* Media queries */
 
