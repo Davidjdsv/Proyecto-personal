@@ -244,6 +244,13 @@ label{
     margin: 1em auto;
 }
 
+#section_portfolio h3{
+    padding: .1em;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 2em; /* Increase the font size */
+}
+
 .title__portfolio{
     display: flex;
     flex-direction: column-reverse;
@@ -373,6 +380,59 @@ label{
     justify-content: center;
     align-items: center;
     margin: 1em auto;
+}
+
+/* Fin sección formulario */
+
+/* Inicio footer */
+
+#footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--negro);
+}
+
+.footer-content{
+    color: var(--blanco);
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content h2{
+    font-size: 2em;
+}
+
+.footer-content h5{
+    font-size: .8em;
+    font-weight: 100;
+}
+
+.social-network{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.social-network i{
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.social-network i:hover{
+    color: var(--rojo);
+    transition: color ease .8s;
+}
+
+.footer-copyright{
+    color: var(--blanco);
 }
 
 /* Media queries */
