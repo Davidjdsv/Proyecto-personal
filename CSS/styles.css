@@ -246,6 +246,7 @@ label{
     margin: 0 auto;
     font-weight: 900;
     font-size: 2em; /* Increase the font size */
+    text-align: center;
 }
 
 .title__portfolio{
@@ -277,6 +278,7 @@ label{
 
 .card__footer button{
     /* Visual */
+    width: 70%;
     margin: .3em;
     padding: .3em;
     border-radius: 30px;
@@ -465,6 +467,39 @@ label{
         width: 100%;
     }
 
+    .about{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .about img{
+        width: 10%;
+        height: auto;
+    }
+
+    .about .about-info{
+        padding: 0;
+        margin-top: 1em;
+    }
+
+    .button-cv{
+        margin: 1em 0;
+        width: 100%;
+    }
+
+    .container-cards__portfolio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-cards__portfolio .content_card_1, .content_card_2, .content_card_3 {
+        height: 15em;
+    }
+
     label {
         display: initial;
     }
@@ -490,6 +525,14 @@ label{
 
     #menu:checked ~ .menu {
         display: initial;
+    }
+
+    .contact-form{
+        width: 90%;
+    }
+
+    .contact-form legend{
+        font-size: larger;
     }
 }
 
