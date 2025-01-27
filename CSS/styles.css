@@ -147,6 +147,13 @@ label{
     column-gap: 10%;
 }
 
+.info-content span{
+    font-size: 1.5em;
+    background-image: linear-gradient(92deg, var(--azul) 10%, var(--rojo) 60%, var(--negro));
+    -webkit-text-fill-color: #0000;
+    -webkit-background-clip: text;
+}
+
 #main img{
     width: 80%;
     border-radius: 50%;
@@ -252,6 +259,7 @@ label{
 }
 
 #section_portfolio h3{
+    color: var(--rojo);
     padding: .1em;
     margin: 0 auto;
     font-weight: 900;
@@ -269,26 +277,33 @@ label{
 
 .container-cards__portfolio{
     width: 100%;
-    height: 80%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 
-.card_bg{
-    color: var(--blanco);
-    width: 100%;
-}
-
-.card__footer{
+.card__portfolio {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 210px;
+    height: 210px;
+    border-radius: 30px;
+    color: var(--blanco);
+    padding: 1px;
+    margin: 1em;
+    -webkit-box-shadow: 1px 1px 19px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 19px 5px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 19px 5px rgba(0,0,0,0.75);
+    overflow: hidden; /* Ensure the background image respects the border radius */
+    text-align: center; /* Center text inside the card */
 }
 
 .card__footer button{
     /* Visual */
-    width: 70%;
     margin: .3em;
     padding: .3em;
     border-radius: 30px;
@@ -306,17 +321,6 @@ label{
     transition: ease .7s;
 }
 
-.card__portfolio {
-    width: fit-content;
-    border-radius: 30px;
-    padding: 1px;
-    margin: 2em;
-    -webkit-box-shadow: 1px 1px 19px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 1px 19px 5px rgba(0,0,0,0.75);
-    box-shadow: 1px 1px 19px 5px rgba(0,0,0,0.75);
-    overflow: hidden; /* Ensure the background image respects the border radius */
-}
-
 .card_bg {
     width: 100%;
     height: 100%; /* Ensure the background image fills the card */
@@ -325,6 +329,12 @@ label{
     background-repeat: no-repeat;
     border-radius: 30px 30px 0 0; /* Apply border radius to the background image */
     padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: start; /* Center text inside the background */
+    overflow: hidden; /* Ensure text does not overflow */
 }
 
 .content_card_1{
