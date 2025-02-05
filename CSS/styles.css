@@ -60,11 +60,10 @@ header{
 .menu a::before{
     content: '';
     position: absolute;
-    top: 113%;
+    top: 110%;
     width: 9%;
     height: 5px;
-    background-color: var(--rojo);
-    border-bottom: 0.1em solid var(--rojo);
+    border-bottom: 0.3em solid var(--rojo);
     transform: translateY(-50%);
     z-index: 1;
     opacity: 0;
@@ -312,8 +311,8 @@ label{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 210px;
-    height: 210px;
+    width: 300px;
+    height: 300px;
     border-radius: 30px;
     color: var(--blanco);
     padding: 1px;
